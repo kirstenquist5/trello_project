@@ -5,6 +5,7 @@ import NavBar from './components/NavBar'
 import About from './components/About';
 import NoMatch from './components/NoMatch';
 import Boards from './components/Boards'
+import Board from './components/Board'
 
 
 const App = () => (
@@ -14,7 +15,7 @@ const App = () => (
       <Route exact path='/' component={Home} />
       <Route exact path='/about' component={About} />
       <Route exact path='/boards' component={Boards} />
-
+      <Route exact path='/boards/:id' component={Board} />
       <Route component={NoMatch} />
     </Switch>
   </Fragment>
