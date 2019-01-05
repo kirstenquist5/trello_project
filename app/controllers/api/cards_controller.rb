@@ -1,4 +1,4 @@
-class Api::cardsController < ApplicationController
+class Api::CardsController < ApplicationController
   before_action :set_card, only: [:show, :update, :destroy]
 
   def index
